@@ -1,0 +1,11 @@
+ultralytics>=8.4.0  # YOLO26 exige 8.4+
+opencv-python>=4.10.0
+matplotlib>=3.9.0
+pandas>=2.2.0
+numpy>=1.26.0
+pyyaml>=6.0
+seaborn>=0.13.0
+supervision>=0.24.0
+lap>=0.5.12  # dependência do ByteTrack (05_infer_video.py --track)
+scikit-learn>=1.5.0
+clip @ git+https://github.com/ultralytics/CLIP.git  # encoder de texto do YOLOE (00b_autolabel_yoloe.py)

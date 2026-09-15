@@ -1,0 +1,22 @@
+# Configuração de dataset para detecção (formato Ultralytics YOLO)
+# Gerado por: python scripts/01_prepare_dataset.py --raw_dir data/raw --out_dir data/processed
+
+path: data/processed/detect   # relativo à raiz do repositório (rode os scripts a partir dela)
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: capivara
+  1: cachorro_do_mato
+  2: tamandua_bandeira
+  3: tatu
+  4: lobo_guara
+
+# Metadados de referência (não lido pelo Ultralytics, só documentação)
+species_scientific_names:
+  capivara: Hydrochoerus hydrochaeris
+  cachorro_do_mato: Cerdocyon thous
+  tamandua_bandeira: Myrmecophaga tridactyla
+  tatu: Euphractus sexcinctus
+  lobo_guara: Chrysocyon brachyurus

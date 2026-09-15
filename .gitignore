@@ -1,0 +1,23 @@
+data/raw/*
+data/raw_seg/*
+data/inaturalist/*
+data/processed/*
+!data/raw/.gitkeep
+!data/raw_seg/.gitkeep
+!data/processed/.gitkeep
+outputs/*
+!outputs/.gitkeep
+*.pt
+*.mp4
+*.avi
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
+
+# ambiente local / IDE
+.venv/
+.idea/
+.pytest_cache/
+models/

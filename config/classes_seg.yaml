@@ -1,0 +1,16 @@
+# Configuração de dataset para segmentação de instâncias (formato Ultralytics YOLO-seg)
+# As labels aqui devem estar no formato polygon (não bounding box)
+# Gerado por: python scripts/01_prepare_dataset.py --raw_dir data/raw_seg --out_dir data/processed --task segment
+# Ver docs/fase1_proposta.md e data/DATASET_SOURCES.md para o plano de anotação
+
+path: data/processed/segment   # relativo à raiz do repositório (rode os scripts a partir dela)
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: capivara
+  1: cachorro_do_mato
+  2: tamandua_bandeira
+  3: tatu
+  4: lobo_guara
