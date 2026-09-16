@@ -97,7 +97,15 @@ Os scripts 02 a 05 aceitam `--device` (`0` para GPU CUDA, `mps` para Mac Apple
 Silicon, `cpu`); sem o argumento o Ultralytics escolhe sozinho.
 
 Ou abra `notebooks/main_colab.ipynb` no Google Colab — ele clona este repositório
-e executa as mesmas etapas com GPU.
+e executa as mesmas etapas com GPU. No topo do notebook, `COLETAR_DADOS` e `TREINAR`
+controlam as etapas longas: com `False` (como está salvo), as células de coleta e treino
+exibem os logs/curvas das execuções em `outputs/` e só avaliação e vídeo rodam de novo;
+num ambiente novo (Colab), ponha as duas em `True`. Para executar localmente e salvar
+as saídas no próprio arquivo:
+
+```bash
+python -m nbconvert --to notebook --execute --inplace notebooks/main_colab.ipynb
+```
 
 ### Ambiente local e testes
 

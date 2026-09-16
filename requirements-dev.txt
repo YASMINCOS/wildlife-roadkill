@@ -1,2 +1,4 @@
 -r requirements.txt
 pytest>=8.0
+ipykernel>=6.29  # executar notebooks/main_colab.ipynb localmente
+nbconvert>=7.16

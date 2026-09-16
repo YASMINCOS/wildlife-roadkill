@@ -5,7 +5,8 @@ Bônus: rastreamento de objetos (ByteTrack) entre frames — soma até +0,5 na n
 
 Uso (sem tracking, obrigatório):
     python scripts/05_infer_video.py --weights outputs/segment/weights/best.pt \
-        --source data/video_teste.mp4
+        --source data/video_teste.mp4clear && ver scripts/02_train_detect.py 33 52
+
 
 Uso (com tracking, bônus):
     python scripts/05_infer_video.py --weights outputs/segment/weights/best.pt \
